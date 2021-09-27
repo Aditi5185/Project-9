@@ -1,25 +1,29 @@
 
 function setup() {
   createCanvas(400,400);
+
+  btn_red = createButton("RED");
+  btn_red.posotion(100,50);
+  btn_red.mousePressed(red_bg);
+
+  btn_green = createButton("GREEN");
+  btn_green.posotion(250,50);
+  btn_green.mousePressed(green_bg);
 }
 
-function draw() 
+
+function red_bg()
 {
-  background(30);
-if (keyIsDown(DOWN_ARROW)){
-background("red")
+  r = 255;
+  g = 0;
+  b =0;
 }
-if (keyIsDown(LEFT_ARROW)){
-  background("green")
-  }
-  if (keyIsDown(RIGHT_ARROW)){
-    background("blue")
-    }
-    if (keyIsDown(UP_ARROW)){
-      background("yellow")
-      }
+function green_bg
+{
+ r = 0;
+ g = 255;
+ b =0; 
 }
-
 
 
 
